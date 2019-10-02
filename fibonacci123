@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+	int n;
+	cin>>n;
+	
+	int a=0;
+	int b=1;
+	for(int i=1;i<=n;i++)
+		{
+			int temp;
+			
+			int e=i;
+			while(e>0){
+				cout<<a<<" ";
+				temp=a+b;
+				a=b;    //assign b to a
+				b=temp;
+				e--;
+			}
+			cout<<endl;
+		}
+}
+	
